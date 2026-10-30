@@ -1,0 +1,88 @@
+import '../models/quiz_question.dart';
+
+const quizQuestions = <QuizQuestion>[
+  QuizQuestion(
+    category: 'Geography',
+    difficulty: 'Easy',
+    text: 'What is the largest city and commercial capital of Sri Lanka?',
+    answers: ['Colombo', 'Moratuwa', 'Negombo', 'Kandy'],
+    correctAnswer: 0,
+  ),
+  QuizQuestion(
+    category: 'Geography',
+    difficulty: 'Easy',
+    text: 'What is the capital of France?',
+    answers: ['Madrid', 'Paris', 'Rome', 'Lisbon'],
+    correctAnswer: 1,
+  ),
+  QuizQuestion(
+    category: 'Geography',
+    difficulty: 'Medium',
+    text: 'Which is the longest river in South America?',
+    answers: ['Paraná', 'Orinoco', 'Amazon', 'São Francisco'],
+    correctAnswer: 2,
+  ),
+  QuizQuestion(
+    category: 'Geography',
+    difficulty: 'Medium',
+    text: 'Which country has the most natural lakes?',
+    answers: ['Canada', 'Finland', 'Russia', 'Norway'],
+    correctAnswer: 0,
+  ),
+  QuizQuestion(
+    category: 'Science',
+    difficulty: 'Easy',
+    text: 'Which planet is known as the Red Planet?',
+    answers: ['Venus', 'Mars', 'Jupiter', 'Mercury'],
+    correctAnswer: 1,
+  ),
+  QuizQuestion(
+    category: 'Science',
+    difficulty: 'Easy',
+    text: 'What is the chemical symbol for water?',
+    answers: ['CO₂', 'O₂', 'H₂O', 'NaCl'],
+    correctAnswer: 2,
+  ),
+  QuizQuestion(
+    category: 'Science',
+    difficulty: 'Medium',
+    text: 'What is the hardest naturally occurring mineral?',
+    answers: ['Quartz', 'Diamond', 'Topaz', 'Corundum'],
+    correctAnswer: 1,
+  ),
+  QuizQuestion(
+    category: 'Science',
+    difficulty: 'Medium',
+    text: 'How many bones are there in an adult human body?',
+    answers: ['206', '186', '216', '196'],
+    correctAnswer: 0,
+  ),
+  QuizQuestion(
+    category: 'History',
+    difficulty: 'Easy',
+    text: 'In which country did the Olympic Games originate?',
+    answers: ['Italy', 'Egypt', 'Greece', 'China'],
+    correctAnswer: 2,
+  ),
+  QuizQuestion(
+    category: 'History',
+    difficulty: 'Easy',
+    text: 'Who was the first person to walk on the Moon?',
+    answers: ['Yuri Gagarin', 'Neil Armstrong', 'Buzz Aldrin', 'John Glenn'],
+    correctAnswer: 1,
+  ),
+  QuizQuestion(
+    category: 'History',
+    difficulty: 'Medium',
+    text: 'In which year did the Berlin Wall fall?',
+    answers: ['1987', '1989', '1991', '1993'],
+    correctAnswer: 1,
+  ),
+  QuizQuestion(
+    category: 'History',
+    difficulty: 'Medium',
+    text: 'Which ancient civilization built Machu Picchu?',
+    answers: ['Maya', 'Aztec', 'Inca', 'Olmec'],
+    correctAnswer: 2,
+  ),
+];
