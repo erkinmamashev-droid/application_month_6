@@ -22,9 +22,9 @@ class QuizIllustration extends StatelessWidget {
                 width: 35,
                 height: 35,
                 decoration: BoxDecoration(
-                  color: AppColors.purple.withValues(alpha: 0.2),
+                  color: AppColors.accent(context).withValues(alpha: 0.2),
                   border: Border.all(
-                    color: AppColors.purple.withValues(alpha: 0.55),
+                    color: AppColors.accent(context).withValues(alpha: 0.55),
                   ),
                   borderRadius: BorderRadius.circular(4),
                 ),
@@ -36,7 +36,7 @@ class QuizIllustration extends StatelessWidget {
             child: Icon(
               Icons.hourglass_empty_rounded,
               size: 59,
-              color: AppColors.blue.withValues(alpha: 0.18),
+              color: AppColors.actionBlue(context).withValues(alpha: 0.18),
             ),
           ),
           Positioned(
@@ -44,7 +44,7 @@ class QuizIllustration extends StatelessWidget {
             child: Icon(
               Icons.hourglass_bottom_rounded,
               size: 43,
-              color: AppColors.purple.withValues(alpha: 0.62),
+              color: AppColors.accent(context).withValues(alpha: 0.62),
             ),
           ),
         ],

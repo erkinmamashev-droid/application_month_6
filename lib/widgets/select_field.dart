@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_colors.dart';
+
 class SelectField extends StatelessWidget {
   const SelectField({
     super.key,
@@ -23,16 +25,16 @@ class SelectField extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 5),
           child: Text(
             label,
-            style: const TextStyle(fontSize: 12, color: Color(0xFFAAAAAA)),
+            style: TextStyle(fontSize: 12, color: AppColors.mutedText(context)),
           ),
         ),
         DropdownButtonFormField<String>(
           initialValue: value,
           isExpanded: true,
-          icon: const Icon(Icons.arrow_drop_down, color: Color(0xFF403252)),
+          icon: Icon(Icons.arrow_drop_down, color: AppColors.text(context)),
           decoration: InputDecoration(
             filled: true,
-            fillColor: Colors.white,
+            fillColor: AppColors.fieldSurface(context),
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 4,
@@ -48,9 +50,9 @@ class SelectField extends StatelessWidget {
                   value: option,
                   child: Text(
                     option,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 14,
-                      color: Color(0xFF403252),
+                      color: AppColors.text(context),
                     ),
                   ),
                 ),
